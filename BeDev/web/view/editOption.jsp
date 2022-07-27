@@ -114,7 +114,7 @@
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <form action="AddOption" method="post">
+                    <form action="/BeDev/expert/AddOption" method="post">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">Create Option</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">

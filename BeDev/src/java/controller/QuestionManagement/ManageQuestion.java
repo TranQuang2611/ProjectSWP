@@ -11,7 +11,6 @@ import dao.OptionDAO;
 import dao.QuestionDAO;
 import dao.QuizDAO;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -60,7 +59,7 @@ public class ManageQuestion extends HttpServlet {
         ArrayList<Question> listQuestion = new ArrayList<>();
         QuestionDAO questionDAO = new QuestionDAO();
         QuizDAO quizDAO = new QuizDAO();
-        modal.Quiz quiz = new modal.Quiz();
+        modal.Quiz quiz;
         int qid;
         try {
             if (session.getAttribute("account") != null) {  //check login with account session
